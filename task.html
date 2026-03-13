@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+  <header>
+    <h1>To-Do List</h1>
+    <nav>
+        <ul>
+            <li><a href="./Home.html">Home</a></li>
+            <li><a href="./features.html">Features</a></li>
+            <li><a href="./about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="input-container">
+            <input type="text" id="todo-input" placeholder="Add a new task...">
+            <select id="category-select">
+                <option value="Personal">Personal</option>
+                <option value="Education">Education</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Work">Work</option>
+                <option value="Health">Health</option>
+            </select>
+            <button onclick="addTodo()">Add</button>
+        </div>
+        <ul id="todo-list"></ul>
+    </div>
+  </section>
+</main>
+<footer>
+    <p>&copy; For any queries +82329049234</p>
+</footer>
+    <script src="task.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative; 
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body::before {
+  content: "";
+  position: fixed; /* Ensures the overlay covers the whole screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./todoimgg.png'); /* Add the path to your image here */
+  background-size: cover; /* Ensures the background covers the entire page */
+  background-repeat: no-repeat; /* Prevents the background from repeating */
+  background-attachment: fixed; /* Keeps the background fixed in place when scrolling */
+  background-position: center;
+  opacity: 0.5; /* Adjust the opacity for the image */
+  z-index: -2; /* Centers the background image */
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Places the overlay behind the content but above the background image */
+}
+
+header {
+  color: black;
+  padding: 50px;
+  font-size: large;
+}
+
+footer {
+ 
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+}
+.btn{
+  font-size: larger;
+}
+
+/* Catalog page specific styles */
+main {
+  padding: 160px;
+  font-size: xx-large;
+  
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; /* To vertically align links */
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+  header, footer {
+    padding: 20px;
+  }
+
+  main {
+    padding: 100px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  nav ul li:last-child {
+    margin-bottom: 0;
+  }
+}
