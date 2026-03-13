@@ -1,3 +1,16 @@
+To-Do List WebApp
+Tech Stack
+HTML
+CSS
+
+Features
+Add, edit, and delete tasks
+Categorize tasks (Personal, Work, Education, Shopping, Health)
+Simple, responsive UI
+
+Live Demo
+https://todo-app-myx4.onrender.com
+
 ## Screenshots
 
 ### Home Page
